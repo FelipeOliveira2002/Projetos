@@ -401,3 +401,21 @@ footer{
     top: -80px;
 }
 
+footer a{
+    color: #2e8b57;
+}
+
+@media screen and(max-width: 1280px){
+    #home .container .icons ion-icon{
+        font-size: 1.5rem;
+    }
+    #port .container .card h1{
+        font-size: 5rem;
+    }
+    #port .container .card p{
+        width: 280px;
+        font-size: 0.8rem;
+    }
+}
+
+
