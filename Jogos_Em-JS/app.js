@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		for(let i=0; i<cardArray.length;i++){
 			var card = document.createElement('img')
 			card.setAttribute('src', 'images/card.png')
-			card.setAttribute('data-id',i)
+			card.setAttribute('data-id',i)//recene um data id significando q o card passa a ter um id e esse id e representado pelo i q vai cresendo a medade que ainda e menor que o cardarray.length
 			card.addEventListener('click',flipCard)
 			grid.appendChild(card)
 		}
@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Virando cards
 	function flipCard() {
 		var cardId = this.getAttribute('data-id')
-		cardsChosen.push(cardArray[cardId].name)
+		console.log(cardId)
+		cardsChosen.push(cardArray[cardId].name) //cardchosen adiciona o array q tem os objetos de todas as imagems colocada o id q no caso é o length e pega o name
 		cardsChosenId.push(cardId)
 		this.setAttribute('src', cardArray[cardId].img)
 		if(cardsChosen.length == 2){
