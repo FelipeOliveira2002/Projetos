@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		cardsChosen.push(cardArray[cardId].name) //cardchosen adiciona o array q tem os objetos de todas as imagems colocada o id q no caso é o length e pega o name
 		cardsChosenId.push(cardId)
 		this.setAttribute('src', cardArray[cardId].img)
+		console.log(cardsChosen.length)
 		if(cardsChosen.length == 2){
 			setTimeout(checkforMatch, 500)
 		}
